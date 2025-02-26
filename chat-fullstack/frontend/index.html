@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <div class="chat-container">
-        <div id="messages" class="messages"></div>
-        <textarea id="message-input" placeholder="Type a message..."></textarea>
-        <button id="send-button">Send</button>
+    <div id="app">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">ChatApp</div>
+            <div class="menu-item active">Chats</div>
+            <div class="menu-item">Teams</div>
+            <div class="menu-item">Settings</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <!-- Header -->
+            <div class="header">General Chat</div>
+
+            <!-- Chat Area -->
+            <div class="chat-area">
+                <div class="chat-message received">Hi there! How can I help you?</div>
+                <div class="chat-message sent">Can you tell me more about this chat app?</div>
+                <div class="chat-message received">Of course! It’s inspired by Microsoft Teams.</div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <input type="text" placeholder="Type a message...">
+                <button>Send</button>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
